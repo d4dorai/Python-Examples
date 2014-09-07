@@ -78,7 +78,9 @@ print.py should be executable in the following way:
 When executed, the script should print each tweet on an individual line to stdout.
  
 What to turn in: Nothing. This is a warmup exercise.
-Problem 1: Get Twitter Data
+
+
+###Problem 1: Get Twitter Data
  
 As always, the first step is to make sure your assignment materials up to date.
  
@@ -120,7 +122,9 @@ Don’t use someone else’s file; we will check for uniqueness in other parts o
 What to turn in: The first 20 lines of your file. You can get the first 20 lines by using the following command:
  
 $ head -n 20 output.txt
-Problem 2: Derive the sentiment of each tweet
+
+
+###Problem 2: Derive the sentiment of each tweet
  
 For this part, you will compute the sentiment of each tweet based on the sentiment scores of the terms in the tweet. The sentiment of a tweet is equivalent to the sum of the sentiment scores for each term in the tweet.
  
@@ -155,7 +159,7 @@ Refer to the twitter documentation in order to determine what field to parse.
  
 What to turn in: tweet_sentiment.py
  
-Problem 3: Derive the sentiment of new terms
+###Problem 3: Derive the sentiment of new terms
  
 In this part you will be creating a script that computes the sentiment for the terms that do not appear in the file AFINN-111.txt.
 Here's how you might think about the problem: We know we can use certain words to deduce the sentiment of a tweet. Once you know the sentiment of the tweets that contain some term, you can assign a sentiment to the term itself.
@@ -183,7 +187,7 @@ How we will grade Part 3: We will use a given file and make sure that your score
 If the grader is returning "Formatting error: ", make note of the line of text returned in the message. This line corresponds to a line of your output. The grader will generate this error if line.split() does not return exactly two items. One common source of this error is to not remove the the two calls to the "lines" function in the solution template -- this function prints the number of lines in each file. Make sure to check the first two lines of your output!
 
  
-Problem 4: Compute Term Frequency
+###Problem 4: Compute Term Frequency
  
 Write a Python script, frequency.py, to compute the term frequency histogram of the livestream data you harvested from Problem 1.
  
@@ -209,7 +213,9 @@ Frequency measurements may take phrases into account, but this is not required. 
 Depending on your method of parsing, you may end up with frequencies for hashtags, links, stop words, phrases, etc. Some noise is acceptable for the sake of keeping parsing simple.
  
 What to turn in: frequency.py
-Problem 5: Which State is happiest?
+
+
+###Problem 5: Which State is happiest?
 Write a Python script, happiest_state.py, that returns the name of the happiest state as a string.
  
 happiest_state.py should take a file of tweets as an input and be usable in the following way:
@@ -241,7 +247,8 @@ Your script will not have access to the Internet, so you cannot rely on third pa
  
 What to turn in: happiest_state.py
  
-Problem 6: Top ten hash tags
+
+###Problem 6: Top ten hash tags
  
 Write a Python script, top_ten.py, that computes the ten most frequently occurring hash tags from the data you gathered in Problem 1.
  
